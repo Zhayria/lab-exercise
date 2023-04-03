@@ -1,5 +1,5 @@
 # Fetching the latest node image on alpine linux
-FROM node: 17-alpine
+FROM node:16-alpine AS development
 
 # Declaring env
 ENV NODE_ENV development
@@ -8,7 +8,7 @@ ENV NODE_ENV development
 WORKDIR /app
 
 # Installing dependencies
-COPY package.json ./
+COPY package.json .
 
 RUN npm install
 

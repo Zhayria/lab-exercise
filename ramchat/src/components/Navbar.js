@@ -24,9 +24,7 @@ function Navbar() {
         < nav className= 'navbar'>
           <div className='navbar-container'>
             <Link to='/' className='navbar-logo'>
-            RAMCHAT <span class='material-symbols-outlined'>
-                   smartphone
-                    </span>
+            RAMCHAT 
             </Link>
            <div className='menu-icon' onClick={handleClick}>
              <span class={click ? "" : ""} >
